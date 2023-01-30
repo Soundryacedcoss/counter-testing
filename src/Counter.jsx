@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 export const Counter = () => {
+  // counter state
   const [counter, setCounter] = useState(1);
+  // increase button function
   const incrementCounter = () => {
     setCounter(counter + 1);
   };
-
+// decrease button function
   const decrementCounter = () => {
-    if (counter >= 1) {
+    if (counter > 1) {
       setCounter(counter - 1);
     }
   };
